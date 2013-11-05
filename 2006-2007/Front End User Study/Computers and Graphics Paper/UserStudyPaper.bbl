@@ -1,0 +1,141 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem{Long00VisualSimilarity}
+J.~A.~Chris~Long, J.~A. Landay, L.~A. Rowe, J.~Michiels, Visual similarity of
+  pen gestures, in: Proc. of CHI, ACM Press, 2000.
+
+\bibitem{Wolin2007Labeler}
+C.~A. Aaron~Wolin, Devin~Smith, A pen-based tool for efficient labeling of 2d
+  sketches, in: Eurographics Workshop on Sketch-Based Interfaces and Modeling,
+  2007.
+
+\bibitem{Alvarado2001Preserving}
+C.~Alvarado, R.~Davis, Preserving the freedom of paper in a computer-based
+  sketch tool, in: Human Computer Interaction International Proceedings, 2001.
+
+\bibitem{Alvarado2004SketchRead}
+C.~Alvarado, R.~Davis, Sketchread: a multi-domain sketch recognition engine,
+  in: Proc. of UIST, 2004.
+
+\bibitem{Apitz04CrossY}
+G.~Apitz, F.~Guimbreti\`{e}re, {CrossY}: a crossing-based drawing application,
+  in: Proc. of UIST, ACM Press, 2004.
+
+\bibitem{chin88}
+J.~P. Chin, V.~A. Diehl, K.~L. Norman, Development of an instrument measuring
+  user satisfaction of the human-computer interface, in: Proc. of CHI, ACM
+  Press, 1988.
+
+\bibitem{Dahlback1993Wizard}
+N.~Dahlb\"{a}ck, A.~J\"{o}nsson, L.~Ahrenberg, Wizard of oz studies: why and
+  how, in: Proc. of IUI, ACM Press, 1993.
+
+\bibitem{Davis2007SketchWizard}
+R.~C. Davis, T.~S. Saponas, M.~Shilman, J.~A. Landay, {SketchWizard}: {Wizard}
+  of {Oz} prototyping of pen-based user interfaces, in: Proc. of UIST, 2007.
+
+\bibitem{Frankish95RecogAccuracy}
+C.~Frankish, R.~Hull, P.~Morgan, Recognition accuracy and user acceptance of
+  pen interfaces, in: Proc. of CHI, ACM Press/Addison-Wesley Publishing Co.,
+  1995.
+
+\bibitem{Gennari2005Combining}
+L.~Gennari, L.~B. Kara, T.~F. Stahovich, Combining geometry and domain
+  knowledge to interpret hand-drawn diagrams, Computers and Graphics 29~(4)
+  (2005) 547--562.
+
+\bibitem{Gould1983Composing}
+J.~D. Gould, J.~Conti, T.~Hovanyecz, Composing letters with a simulated
+  listening typewriter, Communications of the ACM 26~(4) (1983) 295--308.
+
+\bibitem{Hammond2002Tahuti}
+T.~Hammond, R.~Davis, Tahuti: A geometrical sketch recognition system for uml
+  class diagrams, in: AAAI Spring Symposium on Sketch Understanding, AAAI
+  Press, 2002.
+
+\bibitem{Hong2002Sketch}
+J.~Hong, J.~Landay, A.~C. Long, J.~Mankoff, Sketch recognizers from the
+  end-user's, the designer's, and the programmer's perspective, in: Sketch
+  Understanding, Papers from the 2002 AAAI Spring Symposium, 2002.
+
+\bibitem{Hse2005Recognition}
+H.~Hse, A.~R. Newton, Recognition and beautification of multi-stroke symbols in
+  digital ink, Computers and Graphics 29~(4).
+
+\bibitem{Klemmer2000Suede}
+S.~R. Klemmer, A.~K. Sinha, J.~Chen, J.~A. Landay, N.~Aboobaker, A.~Wang,
+  Suede: a wizard of oz prototyping tool for speech user interfaces, in: UIST
+  '00: Proceedings of the 13th annual ACM symposium on User interface software
+  and technology, ACM, New York, NY, USA, 2000.
+
+\bibitem{Koile2007Supporting}
+K.~Koile, K.~Chevalier, M.~Rbeiz, A.~Rogal, D.~Singer, J.~Sorensen, A.~Smith,
+  K.~Tay, K.~Wu., Supporting feedback and assessment of digital ink answers to
+  in-class exercises, in: Conference on Innovative Applications of AI (In
+  submission), 2007.
+
+\bibitem{landay96thesis}
+J.~A. Landay, Interactive sketching for the early stages of user interface
+  design, Ph.D. thesis, Carnegie Mellon University (1996).
+
+\bibitem{landay95SILK}
+J.~A. Landay, B.~A. Myers, Interactive sketching for the early stages of user
+  interface design, in: {Proc of CHI}, 1995.
+
+\bibitem{Lank2005Sloppy}
+E.~Lank, E.~Saund, Sloppy selection: Providing an accurate interpretation of
+  imprecise stylus selection gestures, Computers and Graphics 29~(4) (2005)
+  490--500.
+
+\bibitem{LaViola2006Initial}
+J.~J. LaViola, An initial evaluation of a pen-based tool for creating dynamic
+  mathematical illustrations, in: Proc. of Eurographics Sketch-Based Interfaces
+  and Modeling, 2006.
+
+\bibitem{Mankoff2000Providing}
+J.~Mankoff, S.~E. Hudson, G.~D. Abowd, Providing integrated toolkit-level
+  support for ambiguity in recognition-based interfaces, in: Proc. of CHI,
+  2000.
+
+\bibitem{Munteanu2006Effect}
+C.~Munteanu, R.~Baecker, G.~Penn, E.~Toms, D.~James, The effect of speech
+  recognition accuracy rates on the usefulness and usability of webcast
+  archives, in: Proc. of CHI, ACM Press, 2006.
+
+\bibitem{Newman2003Denim}
+M.~W. Newman, J.~Lin, J.~I. Hong, J.~A. Landay, {DENIM}: An informal web site
+  design tool inspired by observations of practice, Human-Computer Interaction
+  18~(3) (2003) 259--324.
+
+\bibitem{Rhyne1993Recognition}
+J.~A. Rhyne, C.~Wolf, Recognition based user interfaces, Advances in
+  Human-Computer Interaction (1993) 191--250.
+
+\bibitem{Tenneson2005ChemPad}
+D.~Tenneson, Technical report on the design and algorithms of chempad, Tech.
+  rep., Brown University (2005).
+
+\bibitem{Wang2006Parsing}
+X.~Wang, M.~Shilman, S.~Raghupathy, Parsing ink annotations on heterogeneous
+  documents, in: Eurographics Workshop on Sketch-Based Interfaces and Modeling
+  (SBIM), 2006.
+
+\bibitem{Wu03ChineseCharacterRecog}
+C.~Wu, K.~Zhang, Y.~Hu, Human performance modeling in temporary segmentation
+  chinese character handwriting recognizers, Int. J. Hum.-Comput. Stud. 58~(4)
+  (2003) 483--508.
+
+\bibitem{Zeleznik2006Fluid}
+R.~Zeleznik, T.~Miller, Fluid inking: augmenting the medium of free-form inking
+  with gestures, in: GI '06: Proceedings of Graphics Interface 2006, Canadian
+  Information Processing Society, Toronto, Ont., Canada, Canada, 2006.
+
+\bibitem{Zeleznik2007Designing}
+R.~Zeleznik, T.~Miller, C.~Li, Designing ui techniques for handwritten
+  mathematics, in: Proceedings of the 4th Eurographics Workshop on Sketch-Based
+  Interfaces and Modeling, 2007.
+
+\end{thebibliography}

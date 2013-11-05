@@ -1,0 +1,141 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{\uppercase{ACLLRM00}}
+
+\bibitem[ACLLRM00]{Long00VisualSimilarity}
+\textsc{A.~Chris~Long J., Landay J.~A., Rowe L.~A., Michiels J.}:
+\newblock Visual similarity of pen gestures.
+\newblock In \emph{Proc. of CHI} (2000), ACM Press, pp.~360--367.
+
+\bibitem[AD01]{Alvarado2001Preserving}
+\textsc{Alvarado C., Davis R.}:
+\newblock Preserving the freedom of paper in a computer-based sketch tool.
+\newblock In \emph{Human Computer Interaction International Proceedings}
+  (2001), pp.~687--691.
+
+\bibitem[AG04]{Apitz04CrossY}
+\textsc{Apitz G., Guimbreti\`{e}re F.}:
+\newblock {CrossY}: a crossing-based drawing application.
+\newblock In \emph{Proc. of UIST} (2004), ACM Press, pp.~3--12.
+
+\bibitem[CDN88]{chin88}
+\textsc{Chin J.~P., Diehl V.~A., Norman K.~L.}:
+\newblock Development of an instrument measuring user satisfaction of the
+  human-computer interface.
+\newblock In \emph{Proc. of CHI} (1988), ACM Press, pp.~213--218.
+
+\bibitem[DJA93]{169968}
+\textsc{Dahlb\"{a}ck N., J\"{o}nsson A., Ahrenberg L.}:
+\newblock Wizard of oz studies: why and how.
+\newblock In \emph{Proc. of IUI} (1993), ACM Press, pp.~193--200.
+
+\bibitem[DSSL07]{Davis2007SketchWizard}
+\textsc{Davis R.~C., Saponas T.~S., Shilman M., Landay J.~A.}:
+\newblock {SketchWizard}: {Wizard} of {Oz} prototyping of pen-based user
+  interfaces.
+\newblock In \emph{Proc. of UIST} (2007).
+
+\bibitem[FHM95]{Frankish95RecogAccuracy}
+\textsc{Frankish C., Hull R., Morgan P.}:
+\newblock Recognition accuracy and user acceptance of pen interfaces.
+\newblock In \emph{Proc. of CHI} (1995), ACM Press/Addison-Wesley Publishing
+  Co., pp.~503--510.
+
+\bibitem[GKS05]{Gennari2005Combining}
+\textsc{Gennari L., Kara L.~B., Stahovich T.~F.}:
+\newblock Combining geometry and domain knowledge to interpret hand-drawn
+  diagrams.
+\newblock \emph{Computers and Graphics 29}, 4 (2005), 547--562.
+
+\bibitem[HD02]{Hammond2002Tahuti}
+\textsc{Hammond T., Davis R.}:
+\newblock Tahuti: A geometrical sketch recognition system for uml class
+  diagrams.
+\newblock In \emph{AAAI Spring Symposium on Sketch Understanding} (2002), AAAI
+  Press, pp.~59--68.
+
+\bibitem[HLLM02]{Hong2002Sketch}
+\textsc{Hong J., Landay J., Long A.~C., Mankoff J.}:
+\newblock Sketch recognizers from the end-user's, the designer's, and the
+  programmer's perspective.
+\newblock In \emph{Sketch Understanding, Papers from the 2002 AAAI Spring
+  Symposium} (2002), pp.~73--77.
+
+\bibitem[KCR{\etalchar{*}}07]{Koile2007Supporting}
+\textsc{Koile K., Chevalier K., Rbeiz M., Rogal A., Singer D., Sorensen J.,
+  Smith A., Tay K., Wu. K.}:
+\newblock Supporting feedback and assessment of digital ink answers to in-class
+  exercises.
+\newblock In \emph{Conference on Innovative Applications of AI (In submission)}
+  (2007).
+
+\bibitem[KSC{\etalchar{*}}00]{354406}
+\textsc{Klemmer S.~R., Sinha A.~K., Chen J., Landay J.~A., Aboobaker N., Wang
+  A.}:
+\newblock Suede: a wizard of oz prototyping tool for speech user interfaces.
+\newblock In \emph{Proc. of UIST} (2000), ACM Press, pp.~1--10.
+
+\bibitem[Lan96]{landay96thesis}
+\textsc{Landay J.~A.}:
+\newblock \emph{Interactive Sketching for the Early Stages of User Interface
+  Design}.
+\newblock PhD thesis, Carnegie Mellon University, 1996.
+
+\bibitem[LaV06]{LaViola2006Initial}
+\textsc{LaViola J.~J.}:
+\newblock An initial evaluation of a pen-based tool for creating dynamic
+  mathematical illustrations.
+\newblock In \emph{Proc. of Eurographics Sketch-Based Interfaces and Modeling}
+  (2006), pp.~157--164.
+
+\bibitem[LM95]{landay95SILK}
+\textsc{Landay J.~A., Myers B.~A.}:
+\newblock Interactive sketching for the early stages of user interface design.
+\newblock In \emph{{Proc of CHI}} (1995), pp.~43--50.
+
+\bibitem[LS05]{Lank2005Sloppy}
+\textsc{Lank E., Saund E.}:
+\newblock Sloppy selection: Providing an accurate interpretation of imprecise
+  stylus selection gestures.
+\newblock \emph{Computers and Graphics 29}, 4 (2005), 490--500.
+
+\bibitem[MBP{\etalchar{*}}06]{Munteanu2006Effect}
+\textsc{Munteanu C., Baecker R., Penn G., Toms E., James D.}:
+\newblock The effect of speech recognition accuracy rates on the usefulness and
+  usability of webcast archives.
+\newblock In \emph{Proc. of CHI} (2006), ACM Press, pp.~493--502.
+
+\bibitem[MHA00]{Mankoff2000Providing}
+\textsc{Mankoff J., Hudson S.~E., Abowd G.~D.}:
+\newblock Providing integrated toolkit-level support for ambiguity in
+  recognition-based interfaces.
+\newblock In \emph{Proc. of CHI} (2000), pp.~368--375.
+
+\bibitem[NLHL03]{Newman2003Denim}
+\textsc{Newman M.~W., Lin J., Hong J.~I., Landay J.~A.}:
+\newblock {DENIM}: An informal web site design tool inspired by observations of
+  practice.
+\newblock \emph{Human-Computer Interaction 18}, 3 (2003), 259--324.
+
+\bibitem[RW93]{Rhyne1993Recognition}
+\textsc{Rhyne J.~A., Wolf C.}:
+\newblock Recognition based user interfaces.
+\newblock \emph{Advances in Human-Computer Interaction} (1993), 191--250.
+
+\bibitem[Ten05]{Tenneson2005ChemPad}
+\textsc{Tenneson D.}:
+\newblock \emph{Technical report on the design and algorithms of ChemPad}.
+\newblock Tech. rep., Brown University, 2005.
+
+\bibitem[WSR06]{Wang2006Parsing}
+\textsc{Wang X., Shilman M., Raghupathy S.}:
+\newblock Parsing ink annotations on heterogeneous documents.
+\newblock In \emph{Eurographics Workshop on Sketch-Based Interfaces and
+  Modeling (SBIM)} (2006), pp.~43--50.
+
+\bibitem[WZH03]{Wu03ChineseCharacterRecog}
+\textsc{Wu C., Zhang K., Hu Y.}:
+\newblock Human performance modeling in temporary segmentation chinese
+  character handwriting recognizers.
+\newblock \emph{Int. J. Hum.-Comput. Stud. 58}, 4 (2003), 483--508.
+
+\end{thebibliography}

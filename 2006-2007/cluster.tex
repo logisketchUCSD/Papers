@@ -1,0 +1,93 @@
+In our attempts to solve the segmentation problem, we took two different approaches.
+It is necessary to make a clear distinction between the two.
+While they both attempt to solve the same problem, they are not interconnected.
+That said, our two approaches consist of a clustering with learned weights method and a graph theory method.
+
+\subsection{Clustering Method}
+Clustering is an unsupervised learning technique that partitions a data set based on some distance metric on the data set.
+In our clustering approach we used a weighted K-Means based clustering approach.
+First, K-Means must be explained.
+K-Means clustering is used to partition the data into exactly K clusters (there are ways to expand K-Means to partition the data into an dynamic number of clusters).
+K-Means uses cluster centers that move around in the space defined by the data set.
+Initially random, the cluster centers grab the points in the data set that are closest to them (using the distance metric defined).
+Then, the cluster centers update themselves, and move to the center of all the points they own.
+This process repeats until all of the cluster centers are static.
+The partitions of the data set are defined in the parts that make up the points that the cluster centers own.
+The fitness of K-Means is the sum of all the points' distances from the cluster centers that they belong to.
+While K-Means is relatively simple, it does suffer from inconsistency.
+That is, from run to run on the same data set, K-Means will likely return slightly different results.
+To help alleviate this problem, K-Means can be run multiple times, and the run with the best fitness can be taken.
+This is not unreasonable as K-Means is very fast.
+
+A point in the data space is also known as a point in the feature space.  
+Each dimension of the point represents some feature, or property, of the stroke it represents.
+The properties include values such as average speed, maximum curvature, arc length, etc.
+The properties also include the label information that the CRF achieves.
+Thus, the labels become weighted features.
+
+The distance measure that commonly used in K-Means is just the Euclidean distance
+$$
+d(C, p) = \sqrt{\sum_{i=1}^{n} (C_i - p_i)^2},
+$$
+where $C$ is a cluster center, $p$ is a point in the data set, and $n$ is the dimension of the data set.
+
+The only difference between K-Means and our weighted K-Means is the distance metric.
+We used the distance metric
+$$
+d(C^k, p) = \sqrt{\sum_{i=1}^{n} w_i^k (C_i^k - p_i)^2},
+$$
+where $C^k$ is a cluster of class $k$ (label $k$) and $w_i^k$ is the weighting factor for class $k$ at $i$.
+That is, each cluster center can have its own set of weights.
+The theory was that each particular label would have its own cluster center.
+That is, we could have a cluster center for ``AND'', ``OR'', and any other label that we wanted.
+
+To learn what weights worked best, we deployed a genetic algorithm.
+A genetic algorithm is a computational method based on the theory of evolution.
+First, an initial population is created.
+Next, the fitness of each individual in the population is calculated (based on what is known as a fitness function).
+Thirdly, those with the best fitness (or those that survive by chance) are chosen to reproduce (known as the selection).
+Then the chosen population creates the next generation through what is known as crossover and mutation (known as reproduction).
+Crossover is the combination of two individuals while mutation is a random change in a single individual.
+This process continues until some ending condition is met.
+Each step in the process is crucial.
+If the fitness function is not representative of the best of the population, then you will not improve over time.
+If selection is too restrictive, then you will quickly come to a population of all the same individuals.
+If crossover ...
+If mutation happens too often, then it will take a long time to reach a fit population.
+If mutation happens too rarely, then the population will tend to get stuck at local minima.
+
+Basically, a genetic algorithm produces a population, breeds and mutates them, and keeps some proportion of the population based on some fitness function.
+The population that we used was composed of weighting vectors and the fitness function we used was the value that K-Means returned.
+Our crossover was a basic, multiple point crossover.
+
+While this will cluster into general label categories, another clustering process would take place that would break the clusters into components. 
+The process would be very similar to the above clustering.
+
+
+
+
+Clustering was run on six documents with up to 7 labels, and the average of the learned weights for each document became the final weights that would be used.
+After the averaged learned weights became available, we ran segmentation on the same six documents that they were trained against.
+Ideally, we would hope to see the clustering return a correctness of about 80\%.
+After four different trainings with the six documents, the results were rather conclusive.
+The trainings ranged from 20\% correct to 40\% correct, with an average correctness of $30\pm 3\%$.
+Even with different features, the clustering method remained relatively low in correctness.
+It seemed that the weighted features were very document specific. 
+That is, if you knew the weights of a specific document for clustering, those weights would not be valid on any other document.
+
+
+
+
+
+
+In~\cite{dietrich95weighting} we see weighted features with the nearest neighbor algorithm.
+We have modified the approach and used weighted features with K-Means clustering.
+
+In~\cite{demiroz96genetic} we see learning weights for nearest neighbor using genetic algorithms.
+Using genetic algorithms, we learned weights for the K-Means clustering algorithm.
+
+
+
+
+As far as clustering with weights for segmentation, the results show that the unsupervised learning technique is relatively incapable of separating the components.
+Further work into the features used in clustering \emph{might} be fruitful, but the graph theory method is much more promising.

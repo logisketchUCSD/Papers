@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: UserStudyPaper.aux
+The style file: elsart-num-sort.bst
+Database file #1: UserStudyPaper-bibio.bib
+You've used 29 entries,
+            2667 wiz_defined-function locations,
+            802 strings with 10163 characters,
+and the built_in function-call counts, 8444 in all, are:
+= -- 619
+> -- 483
+< -- 0
++ -- 202
+- -- 170
+* -- 689
+:= -- 1397
+add.period$ -- 29
+call.type$ -- 29
+change.case$ -- 173
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 313
+empty$ -- 836
+format.name$ -- 195
+if$ -- 1728
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 27
+newline$ -- 93
+num.names$ -- 58
+pop$ -- 214
+preamble$ -- 1
+purify$ -- 143
+quote$ -- 0
+skip$ -- 231
+stack$ -- 0
+substring$ -- 294
+swap$ -- 8
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 116
+warning$ -- 0
+while$ -- 69
+width$ -- 31
+write$ -- 238

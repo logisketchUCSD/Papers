@@ -1,0 +1,325 @@
+% ---------------------------------------------------------------------------
+% Author guideline and sample document for EG publication using LaTeX2e input
+% D.Fellner, v1.11, Feb 28, 2005
+
+\documentclass{egpubl}
+
+% --- for  Annual CONFERENCE
+% \ConferenceSubmission % uncomment for Conference submission
+ \ConferencePaper      % uncomment for (final) Conference Paper
+% \STAR                 % uncomment for STAR contribution
+% \Tutorial             % uncomment for Tutorial contribution
+% \ShortPresentation    % uncomment for (final) Short Conference Presentation
+%
+% --- for  CGF Journal
+% \JournalSubmission    % uncomment for submission to Computer Graphics Forum
+% \JournalPaper         % uncomment for final version of Journal Paper
+%
+% --- for  EG Workshop Proceedings
+% \WsSubmission    % uncomment for submission to EG Workshop
+% \WsPaper         % uncomment for final version of EG Workshop contribution
+%
+ \electronicVersion % uncomment if producing the printed version
+
+% for including postscript figures
+% mind: package option 'draft' will replace PS figure by a filename within a frame
+\ifpdf \usepackage[pdftex]{graphicx} \pdfcompresslevel=9
+\else \usepackage[dvips]{graphicx} \fi
+
+\PrintedOrElectronic
+
+% prepare for electronic version of your document
+\usepackage{t1enc,dfadobe}
+
+\usepackage{egweblnk}
+\usepackage{cite}
+\usepackage{verbatim} 
+
+% For backwards compatibility to old LaTeX type font selection.
+% Uncomment if your document adheres to LaTeX2e recommendations.
+\let\rm=\rmfamily    \let\sf=\sffamily    \let\tt=\ttfamily
+\let\it=\itshape     \let\sl=\slshape     \let\sc=\scshape
+\let\bf=\bfseries
+
+% end of prologue
+
+
+
+
+
+% ---------------------------------------------------------------------
+% EG author guidelines plus sample file for EG publication using LaTeX2e input
+% D.Fellner, v1.12, Oct 21, 2005
+
+
+\title[Iterative Design of a Sketch-Based Tool for Pedagogical Circuit Design]%
+      {Iterative Design of a Sketch-Based Tool for Pedagogical Circuit Design}
+
+% for anonymous conference submission please enter your SUBMISSION ID
+% instead of the author's name (and leave the affiliation blank) !!
+\author[P. Wais C. Alvarado A. Wolin]
+       {P. Wais$^1$ C. Alvarado$^1$ A. Wolin$^1$
+%        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
+        \\
+         $^1$Department of Computer Science, Harvey Mudd College, Claremont, CA\\
+%        $^2$ Another Department to illustrate the use in papers from authors
+%             with different affiliations
+       }
+
+% ------------------------------------------------------------------------
+
+% if the Editors-in-Chief have given you the data, you may uncomment
+% the following five lines and insert it here
+%
+% \volume{23}   % the volume in which the issue will be published;
+% \issue{2}     % the issue number of the publication
+% \pStartPage{201}      % set starting page
+
+
+%-------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+   The ABSTRACT is to be in fully-justified italicized text, 
+   between two horizontal lines,
+   in one-column format, 
+   below the author and affiliation information. 
+   Use the word ``Abstract'' as the title, in 9-point Times, boldface type, 
+   left-aligned to the text, initially capitalized. 
+   The abstract is to be in 9-point, single-spaced type.
+   The abstract may be up to 3 inches (7.62 cm) long. \\
+   \textit{which or how many of these classifications make sense?}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{H.5.2}{User Interfaces}{Evaluation/methodology}
+\end{classification}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{H.5.2}{User Interfaces}{Interaction styles}
+\end{classification}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{H.5.2}{User Interfaces}{Prototyping}
+\end{classification}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{H.5.2}{User Interfaces}{User-centered design}
+\end{classification}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{J.6}{Computer-Aided Engineering}{Computer-aided design}
+\end{classification}
+
+
+
+%\begin{classification} % according to http://www.acm.org/class/1998/
+%\CCScat{I.3.3}{Computer Graphics}{Line and Curve Generation}
+%\end{classification}
+
+\begin{classification} % according to http://www.acm.org/class/1998/
+\CCScat{H.1.2}{User/Machine Systems}{Human information processing}
+\end{classification}
+
+\end{abstract}
+
+
+%-------------------------------------------------------------------------
+\section{Introduction}
+
+The field of pedagogical sketch-based systems is currently a thriving area of research.  Sketch-based systems excite students and invite them to exercise their knowledge using a non-traditional means.  Undergraduate electrical engineering courses rely heavily on novel educational software and hardware platforms.  Electrical engineering students traditionally perform circuit design using powerful but sometimes cumbersome WIMP-based software such as Xilinx or ModelSim.  Though coursework relies heavily on this software, students also utilize traditional pen-and-paper technologies for the completion of homeworks and laboratory exercises.  Much electrical engineering coursework requires preliminary design using hand-sketched diagrams before a simulated circuit can be formally constructed or programmed using software.  Furthermore, circuit diagrams created in the design process are primary communication artifacts.  Elimination or simplification of the process of transforming circuit diagrams to code through the utilization of pedagogical sketch-based systems allows for a novel learning process and reduces the implementation effort that this process requires of the student.
+
+Sketch recognition is a vital component for pedagogical skech-based systems.  Sketch recognition is necessary in order to transform students' circuit diagrams into a simulatable program.  Several existing systems demonstrate the success of integrating sketch recognition into pedagogical software for numerous domains, including physics~\cite{LaViola04}, math [laviola], chemistry [Tenneson 05 chempad], and electrical engineerig [Gennari 05].  Furthermore, many existing sketch recognition algorithms successfully apply machine learning [stahovich ref?] or probablistic framework [alvarado-IJCAI2005][WeeSan 06 or WeeSan 07].  Most importantly, users demonstrate a clear desire for sketch recognition in our own investigation.
+
+Multi-domain sketch recognition is an open area of research [sketchread ref?].  Logic circuit design requires a robust and powerful recognition engine.  In order to research user preferences and design a user interface independent of a recognition engine, we use a novel Wizard of Oz technique.  Our technique consists of constructing a prototype user interface that utilizes human-simulated recognition.  Users work with a realistic Tablet PC application while a Wizard actively labels user-drawn symbols and provides simulated recognition results.  Richard Davis' SketchWizard (ref SketchWizard) takes the first stride towards constructing a generic, multi-domain tool for conducting Wizard-of-Oz-based development of sketch-based systems.  Our technique entails the mobilization of SketchWizard's Wizard of Oz paradigmn while simultaneously engineering a Tablet PC applicaion front-end that could potentially wrap future sketch-recognition engines for further user studies.  
+  
+Using an iterative design process for the development of this fron-end, our study aims to investigate the effect of different user interface elements on user experience in order to provide a basis for future design of recognition-based skech interfaces.  Specifically, our work seeks to identify and evaluate several different recognition triggers, feedback mechanisms, annotation devices, and error types.  Contemporary work has generated a vast space of novel user interface elements relevant to our task (ref laviola, denim, CrossY, SILK).  We aim to map set of relevenat interface elements through interviews and evaluate candidate elements through user studies.  We hypothesize that evaluation of these user interface elements will lead to the design of a optimally efficacious user interface for our future system.
+
+Through evaluation of several types of interface elements, we seek to gain a stronger comprehension of how users interact with our system.  Our study aims to address the following questions of inquiry:
+\begin{itemize}
+\item How do users integrate the task of triggering recognition into their workflows?  How can the design of a user interface assist in this integration?
+\item How do users react to and interpret recognition results?  
+\item How can user interface contraints (ref norman to clarify use of terms 'contraint'?) help improve recogntion accuracy through requiring the user to segregate sybol and non-symbol strokes?  What constraints prove most acceptible to the user?
+\item How do recognition errors effect the user experience? 
+\item For our particular domain, what characteristics of a sketch-based system do users find most desirable?
+\end{itemize}
+
+Some ending thoughts..?
+%-------------------------------------------------------------------------
+\section{Related Work}
+
+we can mention ``Recognition Accuracy...'' (spring break),
+as well as possibly ``Chinese character handwriting ...'' paper.  Not much work
+has been done that studies just interface elements.
+chinese character: 
+Recognition accuracy paper
+
+sketch recognition systems: SketchRead [AlvS04], AC-SPARC [Gennari], Laviola [La06]
+
+novel sketch tools: Silk, Landay animation [Da04], Landay UI design [La96], Denim [Lin00], CrossY [Api04]
+
+From the midyear report:
+Current research in multi-domain free-sketch systems and their interfaces exhibits varying success.  SketchRead provides a framework for these systems and proves that free-sketch recognition is technically possible [Alv04, AlvM04].  Furthermore, current research within the Sketchers project is improving the technical feasibility of a successful multi-domain system.  Several projects have successfully introduced novel sketch-based systems to users, including CrossY [Api04], DENIM [Lin00], and others [Bi04, Bl02].  In particular, LaViola's MathPath [La06], a free-sketch system focusing on the domain of mathematical and algebraic symbols, has proven possible the integration of novel sketch-based systems into real-life workflows.  
+UI design principles and evaluation processes: norman [Nor00], Interaction Design [Pre02], Landay presents his own user studies in detail in his thesis [Lan96]
+
+evaluation surveys: chi questionaire [Chi88], more on questionaires [Dum93]
+
+
+%-------------------------------------------------------------------------
+\section{Experimental Design}
+
+
+
+%-------------------------------------------------------------------------
+\section{Results and Discussion}
+
+%-------------------------------------------------------------------------
+\section{Significance and Future Work}
+
+%-------------------------------------------------------------------------
+\section{Conclusion}
+
+%-------------------------------------------------------------------------
+\section{Awknowledgements}
+Kris Karr, Martonosi, Mashek, CS dept staff...
+
+%-------------------------------------------------------------------------
+%\section{References}
+
+
+\bibliographystyle{eg-alpha}
+\bibliography{UserStudyPaper-bibio}
+
+\begin{comment}
+[4] L. Gennari, L. B. Kara, and T. F. Stahovich. "Combining geometry
+and domain knowledge to interpret hand-drawn diagrams."
+Computers and Graphics: Special Issue on Pen-
+Based User Interfaces, 2005.
+
+[10] D. Tenneson. Technical report on the design and algorithms
+of chempad. Technical report, Brown University, 2005.
+
+[AlvM04] Alvarado, C.  "Multi-Domain Sketch Understanding." PhD Thesis, MIT, Sept 2004.
+
+[AlvS04] Alvarado, C. and Davis, R. 2004. "SketchREAD: a multi-domain sketch recognition engine." In Proceedings of the 17th Annual ACM Symposium on User interface Software and Technology (Santa Fe, NM, USA, October 24 - 27, 2004). UIST '04. ACM Press, New York, NY, 23-32.
+
+[Api04] Apitz, G. and Guimbretière, F. 2004. "CrossY: a crossing-based drawing application." In Proceedings of the 17th Annual ACM Symposium on User interface Software and Technology (Santa Fe, NM, USA, October 24 - 27, 2004). UIST '04. ACM Press, New York, NY, 3-12.
+
+[Bi04] Bishop, C. M., Svensen, M., and Hinton, G. E. 2004. "Distinguishing Text from Graphics in On-Line Handwritten Ink." In Proceedings of the Ninth international Workshop on Frontiers in Handwriting Recognition (Iwfhr'04) - Volume 00 (October 26 - 29, 2004). IWFHR. IEEE Computer Society, Washington, DC, 142-147.
+
+[Bl02] Blostein, D., E. Lank, A. Rose, and R. Zanibbi, "User interfaces for on-line diagram recognition," in Graphics Recognition: Algorithms and Applications, LNCS 2390, D. Blostein and Y.B. Kwon, Editors, Springer, 2002, pp. 92 - 103.
+
+[Ch88] Chin, J. P., Diehl, V. A., and Norman, K. L. 1988. "Development of an instrument measuring user satisfaction of the human-computer interface." In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Washington, D.C., United States, May 15 - 19, 1988). J. J. O'Hare, Ed. CHI '88. ACM Press, New York, NY, 213-218.
+
+[Da89] Davis, Fred D. "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology." MIS Quarterly, Vol. 13, No. 3. (Sep., 1989), pp. 319-340.  
+
+[Da04] Davis, Richard C. and James A. Landay. "Informal Animation Sketching: Requirements and Design." In Proceedings of AAAI 2004 Fall Symposium on Making Pen-Based Interaction Intelligent and Natural. October 21-24, Arlington, VA, 2004, 42-48.
+
+[Da06] Davis, Richard. SketchWizard.  March 8, 2005.  Accessed December 7, 2006.  <http://dub.washington.edu/projects/sketchwizard/>
+
+[De03] Devore, Jay L. Probability and Statistics for Engineering and the Sciences, 6th Edition. Duxbury Press; June 30, 2003.
+
+[Du93] Dumas, J. F. and Redish, J. C. A Practical Guide to Usability Testing, 1st Edition. Greenwood Publishing Group Inc., 1993.  
+
+[Hu06] Human Participant Protections: Education for Research Teams.  Accessed September 24, 2006.  <http://cme.cancer.gov/c01/intro_01.htm>
+
+[Ki95] Kieras, D. E., Wood, S. D., Abotel, K., and Hornof, A. 1995. GLEAN: a computer-based tool for rapid GOMS model usability evaluation of user interface designs. In Proceedings of the 8th Annual ACM Symposium on User interface and Software Technology (Pittsburgh, Pennsylvania, United States, November 15 - 17, 1995). UIST '95. ACM Press, New York, NY, 91-100.
+
+[La96] Landay, James A. "Interactive Sketching for the Early Stages of User Interface Design." PhD Thesis, Carnegie Mellon University, December 19, 1996.
+
+[La06] LaViola, J. "An Initial Evaluation of a Pen-Based Tool for Creating Dynamic Mathematical Illustrations."  In Proceedings of the Eurographics Workshop on Sketch-Based Interfaces and Modeling 2006, 157-164, September 2006.
+
+[Lin00] Lin, J., Newman, M. W., Hong, J. I., and Landay, J. A. 2000. "DENIM: finding a tighter fit between tools and practice for Web site design." In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (The Hague, The Netherlands, April 01 - 06, 2000). CHI '00. ACM Press, New York, NY, 510-517.
+
+[No00] Norman, Donal A. The Design of Everyday Things.  London and New York: MIT Press, 2000. ISBN: 0262640376
+
+[Pr02] Preece, J., Rogers, Y., and Sharp, H. 2002 Interaction Design. John Wiley & Sons, Inc.
+\end{comment}
+
+
+%-------------------------------------------------------------------------
+\section{approach or questions.. whatever go here}
+
+1convey to reader what we are looking for
+Through evaluation of several types of interface elements, we seek to gain a stronger comprehension of how users interact with our system.  
+How to users perceive the task of triggering recognition?
+How do users react to and interpret recognition results?
+How do recognition errors effect the user experience?
+What interface constraints can we slip in to improve recognition (e.g. separate non-symbol strokes from symbol strokes)?
+What makes an application efficient?
+%-------------------------------------------------------------------------
+\section{Approach}
+  2how doe we measure... based upon qs we want to answer
+  
+  3 and then what does this mean? (discussion)
+\subsection{Iterative Design Process}
+We involve users heavily during our UI development in order to incorporate the
+maximum amount of feedback in the design process.  We solicited user feedback 
+in order to:
+\begin{itemize}
+	\item Identify use cases and establish overall goal of the tool
+	\item Brainstorm a master set of UI elements and features to consider
+	for the tool
+	\item Prototype UI elements and verify our choice of UI elements to 
+	consider for out study
+	\item Identify tasks that have the best chance of giving us significant results
+	\item Evaluate implemented triggers, feedback mechanisms, and study the 
+	effect of error rates
+\end{itemize}
+
+\subsection{Prototyping}
+Discuss whiteboard paper prototype w/ interviews.  Enumerate/describe the set of interface 
+elements and features that the users wanted
+
+\subsection{Tasks}
+Discuss truth table tasks.  Mention that completion time was not a useful statistic and
+why we think so (perhaps completion time is irrelevant for pedagogical tasks).
+
+\subsection{Participants}
+Briefly describe participant base and the background of our users (e.g. coursework and 
+demographics).
+
+\subsection{Recognition engine-less approach}
+Since we are completing our study without a recognition engine, we use a novel Wizard
+of OZ method to simulate recognition.  (Cite Sketchwizard, other work by Davis, 
+Landay's SUEDE).  We also studied annotation tools in order to attempt to deal
+with the notes-make-recognition-harder problem.
+
+\subsection{Evaluation Measures}
+Through our Tasks study, we found questionnaires to be the most useful evaluation tool.  
+We also collected informal data.  Cite QUIS refs, Laviola's paper for use if QUIS
+
+
+%-------------------------------------------------------------------------
+\section{Implementation}
+Screenshots.  Description of random error recognizer for recognition triggers
+and annotation tools test.  Description of how WoZ Labeler works.  (Cite Aaron, or 
+could we just make him a co-author?)
+
+%-------------------------------------------------------------------------
+\section{Results}
+
+\subsection{Qualitative Results}
+\begin{itemize}
+	\item We were able to come up with a model of when users
+	triggered recognition and have interviews that suggest why users do 
+	what they do.
+	\item We have a better sense of how users might use this tool
+	in conjunction with WIMP simulation software (e.g. Xilinx, Simulink)
+	\item We know why users preferred the elements that they did.
+\end{itemize}
+
+\subsection{Quantitative Results}
+Statistics on survey data and discussion.
+
+%-------------------------------------------------------------------------
+\section{Conclusion}
+
+%-------------------------------------------------------------------------
+\section{Awknowledgements}
+Kris Karr, Martonosi, Mashek, CS dept staff...
+
+
+
+\end{document}

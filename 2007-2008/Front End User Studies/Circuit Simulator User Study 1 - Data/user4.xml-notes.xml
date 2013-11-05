@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sketch id="806f7eb7-ff6a-49d2-9a83-5702255a44a4" units="himetric">
+  <shape type="HorizontalDivider" time="1183151779218" x="740" y="2528" height="148" width="6407" start="f86ffca9-887f-44dc-b3ec-2d8582f147e4" end="f86ffca9-887f-44dc-b3ec-2d8582f147e4">
+    <arg type="substroke">f86ffca9-887f-44dc-b3ec-2d8582f147e4</arg>
+  </shape>
+  <shape type="VerticalDivider" time="1183151816250" x="4064" y="1473" height="9255" width="469" start="aef5e6ed-c0ff-406e-931e-c796f11fc4da" end="e775aaf1-36a9-43c3-a581-e172aadd9a54">
+    <arg type="substroke">aef5e6ed-c0ff-406e-931e-c796f11fc4da</arg>
+    <arg type="substroke">e775aaf1-36a9-43c3-a581-e172aadd9a54</arg>
+  </shape>
+</sketch>

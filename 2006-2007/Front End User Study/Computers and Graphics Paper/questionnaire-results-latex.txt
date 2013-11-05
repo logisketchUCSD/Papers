@@ -1,0 +1,29 @@
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=.9\linewidth]{QuestionnaireResultsRecognitionTrigger.png}
+  \caption{\label{fig:qResultsTriggers}
+           Questionnaire results for Recognition Triggers. Users are asked to express their feeling 
+	  on a scale of 1 = strongly disagree to 7 = strongly agree. Error bars show one standard 
+	  deviation from the mean response. }
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=.9\linewidth]{QuestionnaireResultsFeedback.png}
+  \caption{\label{fig:qResultsFeedback}
+           Questionnaire results for Feedback Mechanisms. }
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=.9\linewidth]{QuestionnaireResultsSepAnnoTools.png}
+  \caption{\label{fig:qResultsSepTools}
+           Questionnaire results for Separation/Annotation Tools. }
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=.9\linewidth]{QuestionnaireResultsError.png}
+  \caption{\label{fig:qResultsErrors}
+           Questionnaire results for Error Types. }
+\end{figure}

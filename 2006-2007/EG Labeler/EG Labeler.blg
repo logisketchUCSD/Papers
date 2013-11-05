@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: EG Labeler.aux
+The style file: eg-alpha.bst
+Database file #1: egbiblabeler.bib
+You've used 13 entries,
+            2855 wiz_defined-function locations,
+            704 strings with 7386 characters,
+and the built_in function-call counts, 5695 in all, are:
+= -- 558
+> -- 272
+< -- 1
++ -- 99
+- -- 98
+* -- 434
+:= -- 882
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 85
+chr.to.int$ -- 13
+cite$ -- 13
+duplicate$ -- 256
+empty$ -- 444
+format.name$ -- 112
+if$ -- 1195
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 13
+newline$ -- 68
+num.names$ -- 39
+pop$ -- 103
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 206
+stack$ -- 0
+substring$ -- 257
+swap$ -- 62
+text.length$ -- 1
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 117
+warning$ -- 0
+while$ -- 54
+width$ -- 17
+write$ -- 156

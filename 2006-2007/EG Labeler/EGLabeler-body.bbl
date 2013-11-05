@@ -1,0 +1,66 @@
+\begin{thebibliography}{\uppercase{RTMF05}}
+
+\bibitem[DE06]{Diakopoulos2006Videotater}
+\textsc{Diakopoulos N., Essa I.}:
+\newblock Videotater: an approach for pen-based digital video segmentation and
+  tagging.
+\newblock In \emph{UIST '06: Proceedings of the 19th annual ACM symposium on
+  User interface software and technology} (New York, NY, USA, 2006), ACM Press,
+  pp.~221--224.
+
+\bibitem[HN04]{Hse2004Sketched}
+\textsc{Hse H., Newton A.~R.}:
+\newblock Sketched symbol recognition using zernike moments.
+\newblock In \emph{Proceedings of the Pattern Recognition, 17th International
+  Conference on (ICPR'04)} (2004).
+
+\bibitem[LKS07]{Lee2007Efficient}
+\textsc{Lee W., Kara L.~B., Stahovich T.~F.}:
+\newblock An efficient graph-based symbol recognizer.
+\newblock \emph{Computers and Graphics Special Issue on Sketch-Based Interfaces
+  and Modeling} (2007).
+
+\bibitem[OAD04]{Oltmans2004ETCHASketch}
+\textsc{Oltmans M., Alvarado C., Davis R.}:
+\newblock Etcha sketches: Lessons learned from collecting sketch data.
+\newblock In \emph{Making Pen-Based Interaction Intelligent and Natural} (Menlo
+  Park, California, October 21-24 2004), AAAI Fall Symposium, pp.~134--140.
+
+\bibitem[RTMF05]{Russell2005LabelMe}
+\textsc{Russell B.~C., Torralba A., Murphy K.~P., Freeman W.~T.}:
+\newblock Labelme: a database and web-based tool for image annotation.
+\newblock \emph{MIT AI Lab Memo AIM-2005-025} (2005).
+
+\bibitem[SD04]{Sezgin2004Scale}
+\textsc{Sezgin T.~M., Davis R.}:
+\newblock Scale-space based feature point detection for digital ink.
+\newblock In \emph{Making Pen-Based Interaction Intelligent and Natural, AAAI
+  Spring Symposium} (2004).
+
+\bibitem[SFLM03]{Saund2003ScanScribe}
+\textsc{Saund E., Fleet D., Larner D., Mahoney J.}:
+\newblock Perceptually-supported image editing of text and graphics.
+\newblock In \emph{UIST '03: Proceedings of the 16th annual ACM symposium on
+  User interface software and technology} (New York, NY, USA, 2003), ACM Press,
+  pp.~183--192.
+
+\bibitem[SL03]{Saund2003InkScribe}
+\textsc{Saund E., Lank E.}:
+\newblock Stylus input and editing without prior selection of mode.
+\newblock In \emph{UIST '03: Proceedings of the 16th annual ACM symposium on
+  User interface software and technology} (New York, NY, USA, 2003), ACM Press,
+  pp.~213--216.
+
+\bibitem[SSD01]{Sezgin01}
+\textsc{Sezgin T.~M., Stahovich T., Davis R.}:
+\newblock Sketch based interfaces: early processing for sketch understanding.
+\newblock In \emph{PUI '01: Proceedings of the 2001 workshop on Perceptive user
+  interfaces} (New York, NY, USA, 2001), ACM Press, pp.~1--8.
+
+\bibitem[Sta04]{Stahovich04}
+\textsc{Stahovich T.~F.}:
+\newblock Segmentation of pen strokes using pen speed.
+\newblock In \emph{AAAI Fall Symposium Series 2004: Making Pen-Based
+  Interaction Intelligent and Natural} (2004).
+
+\end{thebibliography}

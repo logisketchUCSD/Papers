@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{Apitz2004Crossy}
+G.~Apitz and F.~Guimbreti\`{e}re.
+\newblock Cross{Y}: {A} crossing-based drawing application.
+\newblock In {\em Proc. of UIST}, 2004.
+
+\bibitem{Grossman2006Hover}
+T.~Grossman, K.~Hinkley, P.~Baudisch, M.~Agrawala, and R.~Balakrishnan.
+\newblock Hover widgets: Using the tracking state to extend capabilities of
+  pen-operated devices.
+\newblock In {\em Proc. of CHI}, 2006.
+
+\bibitem{Hinckley2006Springboard}
+K.~Hinckley, F.~Guimbreti\`{e}re, P.~Baudisch, R.~Sarin, M.~Agrawala, and
+  E.~Cutrell.
+\newblock The springboard: Multiple modes in one spring-loaded control.
+\newblock In {\em Proc. of CHI}, 2006.
+
+\bibitem{Hinckley2007InkSeine}
+K.~Hinckley, S.~Zhao, R.~Sarin, P.~Baudisch, E.~Cutrell, M.~Shilman, and
+  D.~Tan.
+\newblock Inkseine: In situ search for active note taking.
+\newblock In {\em Proc. of CHI '07}, 2007.
+
+\bibitem{Kattinakere2007Modeling}
+R.~S. Kattinakere, T.~Grossman, and S.~Subramanian.
+\newblock Modeling steering within above-the-surface interaction layers.
+\newblock In {\em Proc. of CHI}, 2007.
+
+\bibitem{Li2005Experimental}
+Y.~Li, K.~Hinckley, Z.~Guan, and J.~Landay.
+\newblock An experimental analysis of mode switching techniques in pen-based
+  user interfaces.
+\newblock In {\em Proceedings of CHI}, 2005.
+
+\bibitem{Mankoff2000Providing}
+J.~Mankoff, S.~E. Hudson, and G.~D. Abowd.
+\newblock Providing integrated toolkit-level support for ambiguity in
+  recognition-based interfaces.
+\newblock In {\em Proc. of CHI}, 2000.
+
+\bibitem{Saund2003Stylus}
+E.~Saund and E.~Lank.
+\newblock Stylus input and editing without prior selection of mode.
+\newblock In {\em Proc. of UIST}, 2003.
+
+\bibitem{Subramanian2006Multilayer}
+S.~Subramanian, D.~Aliakseyeu, and A.~Lucero.
+\newblock Multi-layer interaction for digital tables.
+\newblock In {\em Proc. of UIST}, 2006.
+
+\bibitem{Tesler1981Smalltalk}
+L.~Tesler.
+\newblock The smalltalk environment.
+\newblock {\em Byte}, 6:90--147, August 1981.
+
+\bibitem{Zeleznik2008Lineogrammer}
+R.~C. Zeleznik, A.~Bragdon, C.~Liu, and A.~Forsberg.
+\newblock Lineogrammer: creating diagrams by drawing.
+\newblock In {\em Proc. of UIST '08}, pages 161--170, 2008.
+
+\end{thebibliography}

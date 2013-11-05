@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{fullpage}
+\title{The Effect of Task on Classification Accuracy \\ changes in the SBIM to Computers \& Graphics transition}
+\date{}
+\begin{document}
+\maketitle{}
+
+\begin{itemize}
+\item The largest change we made was to run our experiments on the data from the Automatic Evaluation paper.  We found fairly similar results between the two data sets.
+\item We contacted Dr. Wobbrock about the \$N recognizer and worked with him to get an implementation to test alongside our multi-dollar recognizer and the image-based recognizer.
+\item We implemented an exact solution to the point-matching problem described in the SBIM paper.  This increased the accuracy of our recognizer in most cases, but also increased the complexity and the amount of code required.
+\item With three recognizers performing very well (multi-dollar, \$N, and image-based), we didn't feel the need to continue with our Rubine modifications.  Most of the content about Rubine has been replaced with content about \$N.
+\item Since we were not longer using Rubine, we didn't need as much training data.  We reduced the training/testing split to 50/50, which gives each run more significance, and we see less variance (in terms of recognizer performance) between runs.
+\item While we were redoing our tests, we made sure that the testing procedure allowed us to directly compare recognizers. We have added a section comparing the performance of the 2 versions of multi-dollar, \$N, and the image-based recognizer.
+\item Our findings were consistent with our SBIM paper.  User-specific training data mixed with global training data is pretty much always beneficial to recognition accuracy.  When user-specific trianing data is present, then task-specific training data becomes a significant benefit, as well.  However, with only global training data, we could not show that it was significantly better.  These results manifest more clearly in the circuit data, but they are also consistent with our findings with the Automatic Evaluation data.
+\item The SBIM paper contained some selected graphs and tables, but the relationships between them were confusing.  This paper presents much more data, but it should be clear which data in the graphs corresponds to which data in the tables.
+\item We performed a statistical analysis of stroke-order data between tasks for the circuit data.  This provides an alternative view of the effect of task on drawing order, aside from recognizer performance.
+\end{itemize}
+\end{document}

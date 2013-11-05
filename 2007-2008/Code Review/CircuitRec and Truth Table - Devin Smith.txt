@@ -1,0 +1,123 @@
+Code Review
+Notes by Devin Smith
+
+-----------------
+CircuitRec      |
+----------------|
+Circuit.cs      |
+CircuitRec.cs   |
+EndPoint.cs     |
+Form1.cs        |
+Label.cs        |
+Program.cs      |
+SuperWire.cs    |
+Symbol.cs       |
+VerilogWrite.cs |
+Wire.cs         |
+-----------------
+
+General statement about variable names. Use common naming techniques: ie instead of epcontosymb use ep_con_to_symb, or my personal favorite, epConToSymb. 
+Much easier to read.
+
+----------
+Circuit.cs|
+----------
+What is this program for?
+
+-----------
+Program.cs|
+-----------
+Entry point for the application.
+Right now all of the file names are hard coded, no command line argument switches.
+map variable is created but never used again? Seems important.
+Lots of ArrayList, List<T> much better.
+Seems like lots of unneccessary conversion between List<T> back to ArrayLists, just to create a form.
+
+---------
+Form1.cs|
+---------
+More ArrayLists, I believe that's why the previous program used them so much.
+Instantiation of variables is best done in a constructor, or in the InitializeComponent method (instead of in the class body).
+
+--------
+Wire.cs|
+--------
+When trying to differentiate between discrete values, ie "Input", "Output", and "Internal", do not use the string type. It is better to use an enum.
+Best to use bool for 0 or 1 values (in FindEndPts, there is value called increased that is 0 or 1).
+Use of Math.sqrt is used in many places, even when there is a function called Dist. (Call dist!)
+General optimizations.  IE, instead of calling Math.pow(pt1.X - pt2.X, 2), it is faster to (pt1.X - pt2.X) * (pt1.X - pt2.X).
+Lots of code, seems like room to cut down.
+
+---------
+Label.cs|
+---------
+
+----------
+Symbol.cs|
+----------
+I notice repeated and similar internal values. That is, in both Circuit and Symbol, there are values and functions to find the left, right, up, and down coordinates. 
+Consider creating Parent class from which children class can derive and inherit common methods.
+Using Convert.ToInt16 wrong. Should be ToInt32 (int, not short).
+int variable orientation can take values 1 - 4 (LtoR, RtoL, TtoB, BtoT).  This is confusing, much better to use an enum.
+Magic value of 0.001 in GetSurroundings.  Create constant!
+I see another magic value, maybe it is supposed to be equal to the first value??? 0.0001.  This is why its best to use constants.
+GetSurroundings is about 250 lines of code.  Full of if, else if, nested really deep.  Break functions down! 
+Lots of repeated code in GetSurroundings. I see the same exact block of code (12 lines) about 11 times. That accounts for over 100 lines! Modularize!
+Much better to use switch/case instead of if else a whole bunch of times. Easier to work with enum values as well.
+Hard to check correctness since code is so large.
+
+------------
+SuperWire.cs|
+------------
+Again, better to use enums. 
+Also, reused variables (IOType, name, etc).  May be better to create parent type that these inherit from.
+
+------------
+EndPoint.cs|
+------------
+Again, enums!
+Don't use ArrayLists.
+Magic values in determineType! 0.3, 2, -0.3, 2.  What are they??
+
+---------------
+CircuitSearch.cs|
+---------------
+Dictionary<Substroke, object> outputDict. get rid of objects if necessary.
+magic numbers in parseCircuit ( 1/2.5 ).
+tons of foreach / if statements. 4 levels deep!
+IODetermination is a huge function! ~ 300 lines! M 0 |) |_| L /-\ R I z 3!
+
+CircuitRec.Substroke2CircuitMap returns a Dictionary<Substroke, object>, objects bad!
+
+
+----------------
+Truth Table      
+----------------
+TruthTable.cs
+ShapeComparer.cs
+K-means.cs
+TextRecognition.cs
+----------------
+
+--------------
+TruthTable.cs|
+--------------
+What is a pin?
+Why do you assign slope to 1.0 / 0? Use double.PositiveInfinity, clearer and less likely to cause exception ;).
+In assign, you call the function data() 2 times in each loop, even though it returns the same results every time.
+Stroke it before the loop , and reaccess it each time.
+You have the function assign, and assign(int setCols).  In assign, you go through cols 2 - sqrt(# of data), why can you not just call assign(int)?
+1.0 / 0 in ttGroupLabels.
+Suggest you store data() in class.
+Magic number in dividerIndex... 1000! What a great number!
+
+-------------------
+ShapeComparer.cs|
+-------------------
+I believe the Math.Sign is an unneccessary computation in all of these functions.
+
+-------------------
+TextRecognition.cs
+-------------------
+Need a more central place for strokeToInk, shapeToInk?
+Should not be a console application (has a main function), but a library instead...

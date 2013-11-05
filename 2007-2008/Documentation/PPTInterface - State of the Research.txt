@@ -1,0 +1,32 @@
+State of the Research
+PowerPoint Sketch Interface
+Alice Zhu & Ellen Kephart
+July 27, 2007
+
+Working Features:
+ * Ink input pad with ability to recognize gestures and text.
+ * Ability to control many features of PowerPoint with gestures, including insertion of shapes, slide navigation, and minor text editing.
+ * A clipboard and undo / redo stack (separate from the "real" windows ones -- see Technical Issues)
+
+
+To Do Next:
+
+Major Technical Issues
+
+	* The translation of coordinates on the BasicPad ink input overlay to internal powerpoint coordinates is currently "fixed" -- it only supports a single level of zoom on the slide and does not automatically detect scrolling - the pad form must be manually moved to align with the slide. Create a dynamic translation which changes based on the location and zoom of the slide and allows for accurate object placement and location. (We don't know how to access the current zoom / scroll, nor even where to look for it, though it may be on a Windows level rather than specifically a PowerPoint level.)
+	* All windows generated should behave as "children" of PowerPoint -- remaining on top of the main PowerPoint window even when it has focus, but going behind any external window which covers the PowerPoint application. This may require getting a pointer to PowerPoint as a "window", possibly by finding its handle. Alternatively, this could be done manually by some combination of event handlers - a feature that hides the window when powerpoint loses focus was implemented but is currently commented out due to the window reactivating incorrectly. Currently, the windows do not display in the toolbar.
+	* In general: PowerPoint doesn't recognized the actions initiated by a gesture on the InkOverlay  as being performed by a person -- they are recognized somehow at a lower level. This has several repercussions for the ability to "switch" between using the native PowerPoint interface and the gesture interface. For example, gestured actions do not go into the "undo" stack of PowerPoint; it appears that "undoing" in the native PowerPoint interface will revert *all* changes made with the gesture overlay in a single action. Our Undo / Redo stack is completely separate from the PowerPoint undo stack, and switching between native and our interfaces will probably corrupt it. 
+	* Similarly, we do not interface with the Windows Clipboard, but instead implement our own clipboard which is completely separate. This leads to in general inconsistent behavior when switching interfaces.
+
+
+
+Issues Requiring User Study
+
+	* Currently margins of error for many targeting tasks, eg shape resizing,  are hard-coded guesstimates. Determine the optimal margins such that both accidental selection and an inability to select targets are minimized.
+
+ 	* Our current implementation of moving, resizing, and rotating shapes is unsatisfactory, but there are two possible paths to improvement :
+	* Determine if the way PowerPoint implements these is satisfactory, and if so find a satisfactory way to provide access to the default implementation. We have investigated multiple strategies but not enough to see which stood out:
+		* Ability to "toggle" overlay to transparent and nonresponsive to mouse events, either by using a "hot corner" (buggy implementation) or a button trigger (less convenient but easier for novice users?)
+		* Selective toggle -- pass certain mouse events (the ones suggesting a shape transform) through to PowerPoint or even duplicate every event and check for transforms (don't know if this is even possible to do)
+
+	* Feedback : Users have suggested that the feedback box on the ButtonForm is redundant for actions with obvious feedback (eg creating a shape) and insufficient for non-obvious actions (eg mode switching / copy.) Flashing text when the mode is switched was implemented but not user-tested. Examine user response to varying levels of feedback.

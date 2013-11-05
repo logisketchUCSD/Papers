@@ -1,0 +1,39 @@
+\begin{thebibliography}{\protect\citename{Sezgin et~al\mbox{.} }2001}
+
+\bibitem[\protect\citename{Alvarado and Davis }2004]{Alvarado04}
+{\sc Alvarado, C., and Davis, R.}
+\newblock 2004.
+\newblock Sketchread: a multi-domain sketch recognition engine.
+\newblock In {\em UIST '04: Proceedings of the 17th annual ACM symposium on
+  User interface software and technology}, 23--32.
+
+\bibitem[\protect\citename{Kara and Stahovich }2004]{Kara04}
+{\sc Kara, L.~B., and Stahovich, T.~F.}
+\newblock 2004.
+\newblock Sim-u-sketch: a sketch-based interface for simulink.
+\newblock In {\em AVI '04: Proceedings of the working conference on Advanced
+  visual interfaces}, 354--357.
+
+\bibitem[\protect\citename{Sezgin et~al\mbox{.} }2001]{Sezgin01}
+{\sc Sezgin, T.~M., Stahovich, T., and Davis, R.}
+\newblock 2001.
+\newblock Sketch based interfaces: early processing for sketch understanding.
+\newblock In {\em PUI '01: Proceedings of the 2001 workshop on Perceptive user
+  interfaces}, 1--8.
+
+\bibitem[\protect\citename{Stahovich }2004]{Stahovich04}
+{\sc Stahovich, T.~F.}
+\newblock 2004.
+\newblock Segmentation of pen strokes using pen speed.
+\newblock In {\em AAAI Fall Symposium Series 2004: Making Pen-Based Interaction
+  Intelligent and Natural}.
+
+\bibitem[\protect\citename{Yu and Cai }2003]{Yu03}
+{\sc Yu, B., and Cai, S.}
+\newblock 2003.
+\newblock A domain-independent system for sketch recognition.
+\newblock In {\em GRAPHITE '03: Proceedings of the 1st international conference
+  on Computer graphics and interactive techniques in Australasia and South East
+  Asia}, 141--146.
+
+\end{thebibliography}
